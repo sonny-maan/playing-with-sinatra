@@ -1,9 +1,20 @@
 <% if @kittyname %>
 <h1>My name is <%= @kittyname %></h1>
 <% end %>
+
+<% if @kittyname == nil %>
+<form action="/named-cat">
 <div>
-<img src='http://bit.ly/1eze8aE' style='border: 3px dashed  red'>
-
-
+    <label for="name">CatName:</label>
+    <input type="text" name="CatName">
 </div>
 
+<div>
+    <input type="submit" value="Submit">
+</div>
+</form>
+<% end %>
+
+<div>
+<img src='http://bit.ly/1eze8aE' style='border: 3px dashed  red'>
+</div>
