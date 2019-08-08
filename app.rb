@@ -13,7 +13,9 @@ get '/why-queen-is-shit' do
 end
 
 get '/cat' do
+  @kittyname = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
+
 
 set :session_secret, 'super secret'
