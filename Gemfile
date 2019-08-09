@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-ruby 'ruby-2.6.3'
-
 gem 'capybara'
+gem 'selenium-webdriver'
 gem 'rake'
 gem 'rspec'
 gem 'sinatra'

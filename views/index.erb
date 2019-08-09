@@ -1,20 +1,5 @@
-<% if @kittyname %>
-<h1>My name is <%= @kittyname %></h1>
-<% end %>
-
-<% if @kittyname == nil %>
-<form action="/named-cat">
-<div>
-    <label for="name">CatName:</label>
-    <input type="text" name="CatName">
-</div>
+<h1> Hi, this kitty is named <%= @kittyname %></h1>
 
 <div>
-    <input type="submit" value="Submit">
-</div>
-</form>
-<% end %>
-
-<div>
-<img src='http://bit.ly/1eze8aE' style='border: 3px dashed  red'>
+<img src='http://bit.ly/1eze8aE' style='border: 3px groove  red'>
 </div>

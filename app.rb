@@ -1,15 +1,12 @@
 require 'sinatra' 
 
 get '/' do
-  @kittyname = "harry"
-  erb(:index)
+  erb(:form)
 end
 
-get '/named-cat' do
-  @kittyname = params[:CatName]
+post '/named-cat' do
+  @kittyname = params[:kittyname]
   erb(:index)
 end
-
-
 
 set :session_secret, 'super secret'
